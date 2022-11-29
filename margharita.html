@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stijl.css">
+    <link rel="icon" href="./foto/peperoni.png" type="image/icon type">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+        </style>
+    <title>Margherita Pizza</title>
+</head>
+<body>
+    <header>
+        <a href="./margharita.html"><img src="./foto/logo pizza - kopie.png" alt="pizza foto" width="250px">
+            <marquee behavior="scroll" 
+            direction="right" scrollamount="3"
+            style="color: brown; border: 1px solid blue;">
+           Margherita Pizzeria
+        </marquee>
+        
+    </header>
+    <div id="titels">
+        <h1><a href="./margharita.html">Pizza</a></h1>
+        <h1><a href="./dranken.html">Dranken</a></h1>
+        <h1><a href="./desserts.html">Desserten</a></h1>
+        <h1><a href="./overOns.html">Over ons & Contact</a></h1>
+    </div>
+    <hr>
+    <div id="menu">
+        <div id="pizzaLijst">
+            <div id="pizzas">
+                <h1>Hawaii Pizza</h1>
+                <img src="./foto/Hawaii.png" alt="voorbeelPizza" width="150px">
+            <p> Pizzasaus, Mozzarella, Ham en Ananas</p>
+            <p class="prijs">€15,49</p>
+            </div>
+            <div id="pizzas">
+                <h1>Margherita Pizza</h1>
+                <img src="./foto/voorbeeldpizza.jpeg" alt="voorbeelPizza" width="150px">
+                <p>Tomatensaus, mozzarella en met knoflookolie op de rand van de pizza.</p>
+                <p class="prijs">€12,30</p>
+            </div>
+            <div id="pizzas">
+                <h1>Chicken BBQ</h1>
+                <img src="./foto/BBQ_Chicken.png" alt="voorbeelPizza" width="150px">
+                <p>Pizzasaus, Mozzarella, Bacon, BBQ Saus, Gegrilde Kip en Uien</p>
+                <p class="prijs">€13,50</p>
+            </div>
+            <div id="pizzas">
+                <h1>Peperoni Pizza</h1>
+                <img src="./foto/peperoni.png" alt="voorbeelPizza" width="180px">
+                <p>Pizzasaus, Mozzarella en Dubbele Pepperoni</p>
+                <p class="prijs">€12,25</p>
+            </div>
+            <div id="pizzas">
+                <h1>Shoarma</h1>
+                <img src="./foto/shoarma.png" alt="voorbeelPizza" width="150px">
+                <p>Pizzasaus, Mozzarella, Dubbele Shoarma Chicken, Verse Tomaten, Uien, Overgoten met Knoflooksaus</p>
+                <p class="prijs">€12</p>
+            </div>
+            <div id="pizzas">
+                <h1>Vegan Pizza</h1>
+                <img src="./foto/vegan.png" alt="voorbeelPizza" width="150px">
+                <p>Pizzasaus en Vegan Sheese</p>
+                <p class="prijs">€15,50</p>
+            </div>
+            <div id="pizzas">
+                <h1>American Hot Pizza</h1>
+                <img src="./foto/american.png" alt="voorbeelPizza" width="150px">
+                <p>Pizzasaus en Vegan Sheese</p>
+                <p class="prijs">€14,90</p>
+            </div>
+            <div id="pizzas">
+                <h1>Funghi Pizza</h1>
+                <img src="./foto/funghi.jpg" alt="voorbeelPizza" width="150px">
+                <p>Tomatensaus, mozzarella, champignons & pizzakruiden</p>
+                <p class="prijs">€11</p>
+            </div>
+            <div id="pizzas">
+                <h1>Pizza Salami</h1>
+                <img src="./foto/salami.png" alt="voorbeelPizza" width="150px">
+                <p>Tomatensaus, mozzarella, Salami</p>
+                <p class="prijs">€13,50</p>
+            </div>
+            <div id="pizzas">
+                <h1>Tonijn Pizza</h1>
+                <img src="./foto/tuna.png" alt="voorbeelPizza" width="150px">
+                <p>Tomatensaus, Tonijn, ui & extra mozzarella</p>
+                <p class="prijs">€14,99</p>
+                </div>
+        </div>
+        <div id="bestelInfo">
+            <div id="gegevens">
+                <h2><u> Uw bestelling gegevens </u></h2>
+                
+                <form>
+                    <label for="voornaam">Voornaam</label><br>
+                    <input type="text" id="voornaam" name="voornaam" required placeholder="Typ hier uw voornaam"><br>
+                    <label for="achternaam">Achternaam</label><br>
+                    <input type="text" id="achternaam" name="achternaam" required placeholder="Typ hier uw achternaam"><br><br>
+                    <label for="adress">Adress:</label><br>
+                    <input type="text" id="adress" name="adress" required placeholder="Typ hier uw adres"><br><br>
+                    <label for="postcode">Postcode:</label><br>
+                    <input type="text" id="postcode" name="postcode" required placeholder="Typ hier uw postcode"><br><br>
+                
+
+                    <label for="pizza">Welke pizza kiest u?</label>
+                    <select name="pizza" id="pizza" onchange="totalPrijs()">
+                        <option value="15.49">Hawaii</option>
+                        <option value="12.30">Margherita</option>
+                        <option value="13.50">Chicken</option>
+                        <option value="12.25">Peperoni</option>
+                        <option value="12">Shoarma</option>
+                        <option value="15.50">Vegan</option>
+                        <option value="14.90">American Hot</option>
+                        <option value="11">Funghi</option>
+                        <option value="13.5">Salami</option>
+                        <option value="14.99">Tonijn</option>
+                    </select>
+                    <label for="hoeveelP">Hoeveel Wilt u?</label>
+                    <select name="hoeveel" id="hoeveelP" onchange="totalPrijs()">
+                        <option value='0'>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <br><br>
+                    <!-- keuzes voor dranken -->
+                    <label for="frisDrank">Welke Frisdrank kiest u?</label>
+                    <select name="frisDrank" id="frisDrank" onchange="totalPrijs()">
+                        <option value="2.50">Cola</option>
+                        <option value="2.50">Fanta</option>
+                        <option value="2.50">7up</option>
+                        <option value="2.50">Redbull</option>
+                        <option value="2.50">Ice Thee</option>
+                        <option value="2.50">Sisi</option>
+                    </select>
+                    <label for="hoeveelP">Hoeveel Wilt u?</label>
+                    <select name="hoeveel" id="hoeveelD" onchange="totalPrijs()">
+                        <option value='0'>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                    <br><br>
+                    <!-- keuzes voor desserten -->
+                    <label for="dessertKeuze">Welke desserten kiest u?</label>
+                    <select name="desserten" id="dessertKeuze" onchange="totalPrijs()">
+                        <option value="3.50" name = 'teramisu'>Teramisu</option>
+                        <option value="6.50">Chocolate breadstick</option>
+                        <option value="4.25">Tompoes</option>
+                        <option value="6.50">Ben&Jerry</option>
+                        <option value="5.99">Magnum Ice Cream</option>
+                        <option value="4.00">Mini Brownies</option>
+                    </select>
+                    <label for="hoeveelP">Hoeveel Wilt u?</label>
+                    <select name="hoeveel" id="hoeveelDz" onchange="totalPrijs()">
+                        <option value='0'>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </form>   
+                
+                <div id="knopjes">
+                    <button class="bestel" onclick="totalP()">Bestel</button>
+                    <button id="reset">Reset</button>
+                    <!-- <button id="reset" value="reset">Reset</button> -->
+                </div>
+            </div>
+            <div id="bon"></div>
+            <h3><p id="totalPr"></p></h3>
+        </div>
+    </div>
+    <footer>
+        <h1>Copyright  © 2022 Margherita pizzeria</h1>
+    </footer>
+    <script src="./pizza.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+*{
+    font-family: 'Playfair Display', serif;
+}
+body {
+    margin: 0;
+    padding: 0
+}
+header {
+    display: flex;
+    width:100%;
+    margin: auto;
+    justify-content: space-around;
+    background: #fef6a1;
+}
+
+/* menu titels*/
+#titels { 
+    display: flex;
+    background: rgb(13, 16, 17);
+    justify-content: space-evenly;
+    color: aqua;
+}
+#titels a{
+    box-shadow: inset 0 0 0 0 #ff0101;
+    color: #54b3d6;
+    text-decoration: none;
+    margin: 0 -.25rem;
+  padding: 0 .25rem;
+    border-radius: 50px;
+    /* border-bottom: 3px solid red; */
+    transition: color .3s ease-in-out, box-shadow .6s ease-in-out;
+}
+#titels a:hover {
+    box-shadow: inset 400px 0 0 0 #d91717;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+  }
+#menu {
+    display: flex;
+    /* background: rgba(250, 248, 246, 0.64); */
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Pizza */
+#pizzaLijst , #drankenLijst, #dessertenLijst{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin-left: 90px;
+}
+#pizzas, #dranken, #desserten {
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+    border-radius: 30px;
+}
+
+/* achtergrond voor pizza's */
+#pizzas:nth-child(3n+1){
+    background: green;
+    color: yellow;
+}
+#pizzas:nth-child(3n+2){
+    background: white;
+    color:darkred;
+}
+#pizzas:nth-child(3n+3){
+    background: red;
+    color: greenyellow;
+}
+/* DRANKEN */
+#drank {
+    background:url(./foto/dranken/dranken.webp) no-repeat;
+    background-size:cover;
+    width: 100%;
+}
+.drnkLijst {
+    background: rgb(255, 255, 255);
+}
+.bstlBtn{
+    background-color: red;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.prijs {
+    color: red;
+    font-size: larger;
+    font-weight: 700;
+    background: white;
+    width: 70px;
+    margin: auto;
+}
+#bestelInfo  {
+    height: 40pc;
+    background-image: linear-gradient(to bottom right, rgb(34, 255, 0), yellow);
+}
+
+/* DESSERT */
+#dessert {
+    background: url(./foto/dessert/achtergrond-d.jpg);
+    background-size: cover;
+    width: 100%;
+}
+.desLijst {
+    background-color: rgba(245, 222, 179, 0.764);
+}
+
+/* OVERONS & CONTACT */
+#overOns {
+    padding: 5px;
+    width: 800px;
+
+}
+#overOns,#overContct {
+    width: 50%;
+    margin: auto;
+}
+
+
+/* footer */
+footer {
+    border: #d91717 1px solid;
+    text-align: center;
+    background: black;
+    color: wheat;
+}
+
+
